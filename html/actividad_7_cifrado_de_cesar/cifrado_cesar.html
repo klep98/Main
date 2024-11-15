@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado de Julio César</title>
+    <style>
+        p {
+            display: inline;
+            vertical-align: top;
+            font-size: medium;
+            font-weight: bolder;
+        }
+
+        textarea {
+            width: 85%;
+            resize: none;
+        }
+
+        .btn-back {
+            font-size: 16px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .btn-back:hover {
+            text-decoration: underline;
+        }
+
+        input[type="button"] {
+            margin: 5px;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <p><a class="btn-back" href="./../../index.html">Regresar al menú</a></p>
+
+    <h1>Cifrado de Julio César</h1>
+    El cifrado César consiste en sustituir cada letra del abecedario por una letra desplazada un número determinado de
+    posiciones. <br><br>
+    <p>Message: </p>
+    <br>
+    <textarea name="" id="originalMessage" rows="14" onkeydown="allows(event)" onkeyup="capital(this)"></textarea>
+    <br>
+    <p>Key: </p>
+    <select name="" id="key1"></select>
+    <select name="" id="key2"></select>
+    <select name="" id="key3"></select>
+    <select name="" id="key4"></select>
+    <select name="" id="key5"></select>
+    <select name="" id="key6"></select>
+    <input type="button" value="Example 1" onclick="example1()">
+    <input type="button" value="Example 2" onclick="example2()">
+    <input type="button" value="Encript" onclick="encript()">
+    <input type="button" value="Save Key" onclick="saveKey()">
+    <input type="button" value="Save Encripted Message" onclick="saveMessage()">
+    <input type="button" value="Clear" onclick="clear()">
+    <br><br>
+    <p>Encripted Message: </p><br>
+    <textarea name="" id="encryptedMessage" rows="14" readonly></textarea>
+
+    <script src="./../../js/cifrado_cesar.js"></script>
+
+</body>
+
+</html>
