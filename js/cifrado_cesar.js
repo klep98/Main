@@ -38,11 +38,11 @@ function example2() {
 }
 
 // Limpiar campos
-function clear() {
+function clearTextArea() {
     console.log("Limpiando campos...");
 // Limpiar los mensajes
-    document.getElementById("originalMessage").value = "";
-    document.getElementById("encryptedMessage").value = "";  // Limpiar también el mensaje encriptado
+    document.getElementById("originalMessage").value = " ";
+    document.getElementById("encryptedMessage").value = " ";  // Limpiar también el mensaje encriptado
 
 // Restablecer claves a su valor por defecto (1)
     var selects = document.getElementsByTagName("select");
